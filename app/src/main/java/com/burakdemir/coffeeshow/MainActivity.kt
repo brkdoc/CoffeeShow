@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     fun backward(view: View){
         counter--;
         if(counter<0)
-            counter+=4;
+            counter+=5;
         counter%=5;
         changeImage(counter)
     }
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
                 backward.text="< Filter Coffee"
                 forward.text="Double Espresso >"
             }
-            3-> {
+            4-> {
                 coffeeImages.setImageResource(R.drawable.doubleespresso)
                 coffeeName.text = "Double Espresso"
                 backward.text="< Turkish Coffee"
